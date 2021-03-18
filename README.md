@@ -1,4 +1,4 @@
-# real-estate-web-scraping
+# Real Estate Web Scrapping Project
 
 # Resources
 
