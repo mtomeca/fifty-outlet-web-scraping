@@ -1,4 +1,4 @@
-# Real Estate Web Scrapping Project
+# Fifty Outlet Web Scrapping Project
 
 # Resources
 
