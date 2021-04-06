@@ -2,7 +2,7 @@ from functions import download_content, store_info, output
 from selenium import webdriver
 driver = webdriver.Firefox("C:/WebDriver/bin")
 
-url_to_scrap = "https://fiftyoutlet.com/es/es/hombre/bano"
+url_to_scrap = "https://fiftyoutlet.com/es/es/hombre/bano?sz=96"
 
 soup = download_content(url_to_scrap)
 
