@@ -1,8 +1,7 @@
 from functions import download_content, store_info, output
-from selenium import webdriver
 
 
-url_to_scrap = "https://fiftyoutlet.com/es/es/hombre/bano?sz=96"
+url_to_scrap = "https://fiftyoutlet.com/es/es/hombre/bano?=96"
 
 soup = download_content(url_to_scrap)
 
@@ -32,9 +31,13 @@ data_size_cl = "_2gvZJbOD9AAqBnX5diXm5p js-size-selector"
 # Classe amb les talles.
 sizes_cl = "_2gvZJbOD9AAqBnX5diXm5p js-size-selector"
 
-dict_with_data = store_info(soup, data_cl, data_size_cl, brand_cl,
-                            name_cl, frstPrices_cl, currPrices_cl, colors_cl, sizes_cl)
+# Classe amb les imatges.
+images_cl = "//img[@class='lwbqqALJ4fLdvQofwFwmR _3oHuO91-zpgCu1uPaYKbl0']"
 
+# Generació del diccionari amb la informació amb la qual es generarà el dataset.
+dict_with_data = store_info(soup, url_to_scrap, data_cl, data_size_cl, brand_cl,
+                            name_cl, frstPrices_cl, currPrices_cl, colors_cl,
+                            sizes_cl, images_cl)
 
-output("dataset.csv", dict_with_data)
-print("Arxiu .csv creat correctament")
+# Generació del dataset.
+output("men_swimwear_dataset.csv", dict_with_data)
