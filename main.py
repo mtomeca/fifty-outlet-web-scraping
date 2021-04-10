@@ -1,6 +1,6 @@
 from functions import download_content, store_info, output
 from selenium import webdriver
-driver = webdriver.Firefox("C:/WebDriver/bin")
+
 
 url_to_scrap = "https://fiftyoutlet.com/es/es/hombre/bano?sz=96"
 
@@ -37,3 +37,4 @@ dict_with_data = store_info(soup, data_cl, data_size_cl, brand_cl,
 
 
 output("dataset.csv", dict_with_data)
+print("Arxiu .csv creat correctament")
