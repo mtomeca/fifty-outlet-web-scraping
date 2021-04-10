@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
+from selenium import webdriver
+import urllib
 
 
 def download_content(url):
@@ -18,13 +20,14 @@ def download_content(url):
     return soup
 
 
-def store_info(soup_obj, data_cl, data_size_cl, brand_cl, name_cl,
-               frstPrices_cl, currPrices_cl, colors_cl, sizes_cl):
+def store_info(soup_obj, url_to_scrap, data_cl, data_size_cl, brand_cl, name_cl,
+               frstPrices_cl, currPrices_cl, colors_cl, sizes_cl, img_cl):
     """
     Funció que emmagatzema la informació de la pàgina web escollida en un diccionari
     amb el format i l'organització desitjada.
 
     :param soup_obj: objecte BeautifulSoup amb la informació desitjada.
+    :param url_to_scrap: URL de la pàgina de la que es vol fer scraping.
     :param data_cl: classe amb la gran majoria de les dades i classes a extreure.
     :param data_size_cl: classe existent en tots els productes que conté informació
     de les talles de cada producte.
@@ -34,6 +37,7 @@ def store_info(soup_obj, data_cl, data_size_cl, brand_cl, name_cl,
     :param currPrices_cl: classe que conté el preu actual de cada producte.
     :param colors_cl: classe que conté els colors disponibles de cada producte.
     :param sizes_cl: classe que conté les talles disponibles de cada producte.
+    :param img_cl: classe que conté la imatge de cada producte.
     :return: diccionari amb l'identificador i els camps desitjats.
     """
     # Files amb la majoria de dades a extreure.
@@ -89,6 +93,21 @@ def store_info(soup_obj, data_cl, data_size_cl, brand_cl, name_cl,
                 size_list.append(i['data-size-id'])
         data_dic[id]["Sizes"] = size_list
 
+    # Definició del driver amb la llibreria selenium.
+    driver = webdriver.Firefox()
+    driver.get(url_to_scrap)
+
+    # Selecció de les dades amb la classe desitjada.
+    content = driver.find_elements_by_xpath(img_cl)
+
+    # Emmagatzematge d'imatges.
+    for i, image in enumerate(content):
+        # Es descarrega la imatge al directori on s'executa el codi.
+        img = urllib.request.urlretrieve(image.get_attribute('src'),
+                                         "image_%i.png" % i)
+        # S'afegeix el link al diccionari.
+        data_dic[i+1]["Image"] = image.get_attribute('src')
+
     # Retorna el diccionari generat.
     return data_dic
 
@@ -135,3 +154,6 @@ def output(file_name, dic):
     # Exportació del dataset al fitxer csv amb el nom indicat.
     df.to_csv(file_name,
               index=False)
+
+    # Missatge de confirmació.
+    print("Arxiu .csv creat correctament")
