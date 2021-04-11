@@ -13,6 +13,10 @@ Els arxius que formen part d'aquest treball són els següents:
 - **main.py**: Fitxer principal que ens retorna el fitxer .csv amb totes les dades que volem extreure.
 - **requirements.txt**: Fitxer amb els packages necessaris per poder executar el codi correctament amb le seves respectives versions.
 
+# Execució
+
+Per a la correcte execució d'aquest programa és necessari executar el fitxer **main.py**. El codi d'aquest arxiu ja importa totes les funcions del fitxer **functions.py** per tal que s'obtingui el dataset esperat.
+
 # Llicència
 
 S’ha considerat oportú escollir la llicència **CC BY-NC-SA 4.0** per la publicació del dataset generat pels següents motius:
