@@ -1,57 +1,31 @@
-Pàgines a analitzar:
+Aquest és el contingut del fitxer robots.txt corresponent al domini fiftyoutlet.com:
 
-Idealista: Molt restrictiu... Flipant
+User-agent: *
+Allow: /on/demandware.static*
+Disallow: /*/register
+Disallow: /*/newsletter
+Disallow: /*/loginonbehalf
+Disallow: /*/account
+Disallow: /*/profile
+Disallow: /*/myprofile
+Disallow: /*/wishlist
+Disallow: /*/cart$
+Disallow: /*/cart?
+Disallow: /*/search?q=
+Disallow: /*/search?cgid=
+Disallow: /*pmin=
+Disallow: /*pmax=
+Disallow: /*prefn1=
+Disallow: /*prefv1=
+Disallow: /*prefn2=
+Disallow: /*prefv2=
+Disallow: /*start=
+Disallow: /*sz=
+Disallow: /*srule=
+Disallow: /*crefn1=
+Disallow: /*crefn2=
+Disallow: /on/demandware*
 
-Habitaclia: arxiu molt breu i poc restrictiu. S'adjunta a continuació:
+Sitemap: https://fiftyoutlet.com/sitemap_index.xml
 
-      ***
-      User-agent: *
-      Disallow: /hab_usuarios/registrocorreo.asp*
-      Disallow: /hab_usuarios/ajax/*
-      Disallow: /hab_inmuebles/ajax/*
-      Disallow: /dotnet/NotificacionesLiveListado/GetNotificacionesLiveListado*
-      Disallow: /dotnet/solicitud/vertelefono*
-      Disallow: /dotnet/solicitud/ValidarCaptcha*
-      Disallow: /dotnet/ficha/favrate*
-      Disallow: /dotnet/ficha/favcomment*
-      Disallow: /dotnet/ficha/translate*
-      Disallow: /*.txt$
-      Allow: /robots.txt
-      Allow: /app-ads.txt
-      Allow: /ads.txt
-      ***
-
-Fotocasa: un conjunt d'user-agents no permesos i per la resta hi ha algunes restriccions. No hi ha cap tipus de restriccions (Disallow: ) per "User-agent: Mediapartners-Google".
-
-
-Housfy: No ens deixa rastrejar dos directoris
-
-      User-agent: *
-      Disallow: /dashboard
-      Disallow: /blog/wp-
-
-
-Housell: Permís a tots els robots
-      User-agent: *
-      Sitemap: https://www.housell.com/sitemaps.xml
-
-Yaencontre: Molt restrictiu, igual que Idealista
-
-Pisos.com: Tot menys aquests 4 directoris
-
-      User-Agent: *
-      Disallow:/busqueda/$
-      Disallow: /*.aspx
-      Disallow: /WS/
-      Disallow: /mapa/
-
-      User-agent: Mediapartners-Google 
-      Disallow:
-
-
-Tucasa.com: El veig bastant restrictiu.
-
-
-** Veient això em quedaria amb: Habitaclia; Fotocasa; Pisos.com; Tucasa.com; Housfy.
-
-No sé si és convenient fer l'scrapping de tots... O poder ens centrem només en 1... Pensem-ho.
+A partir d'aquest fitxer, hem interepretat que podíem fer una extracció de les dades que ens interessen sense problemes.
