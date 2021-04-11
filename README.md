@@ -13,6 +13,14 @@ Els arxius que formen part d'aquest treball són els següents:
 - **main.py**: Fitxer principal que ens retorna el fitxer .csv amb totes les dades que volem extreure.
 - **requirements.txt**: Fitxer amb els packages necessaris per poder executar el codi correctament amb le seves respectives versions.
 
+# Llicència
+
+S’ha considerat oportú escollir la llicència **CC BY-NC-SA 4.0** per la publicació del dataset generat pels següents motius:
+- S’ha d’aportar el nom dels creadors del conjunt de dades generat, indicant els canvis que s’han realitzat respecte la versió original. Això implica que es segueixi reconeixent el treball realitzat pels autors originals i, alhora, les aportacions posteriors dels usuaris que hagin modificat el projecte original.
+- No es permet l'ús comercial d'aquest treball ja que s'ha enfocat estrictament per a funcions d'aprenantatge i difusió de coneixement. Així doncs, l'objectiu és que pugui ser reaprofitat per un objectiu acadèmic i en cap cas per un ús comercial.
+- Les contribucions realitzades a posteriori sobre el treball publicat sota aquesta llicència hauran de publicar-se sota la mateixa llicència. D’aquesta manera, els autors originals veurà versions posteriors del seu treball publicades amb les condicions i termes que ell mateix ha escollit.
+
+
 # Resources
 
 https://developer.mozilla.org/es/docs/Web/HTML
