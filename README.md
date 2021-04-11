@@ -15,7 +15,7 @@ Els arxius que formen part d'aquest treball són els següents:
 
 # Execució
 
-Per a la correcte execució d'aquest programa és necessari executar el fitxer **main.py**. El codi d'aquest arxiu ja importa totes les funcions del fitxer **functions.py** per tal que s'obtingui el dataset esperat.
+Per a la correcte execució d'aquest programa és necessari executar el fitxer **main.py**. El codi d'aquest arxiu ja importa totes les funcions del fitxer **functions.py** per tal que s'obtingui el dataset esperat. Com a resultat s'obtindrà al *dataset* resultant i les imatges dels articles disponibles al mateix directori on s'executi el codi.
 
 # Llicència
 
