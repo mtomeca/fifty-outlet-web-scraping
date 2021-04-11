@@ -16,8 +16,13 @@ Els arxius que formen part d'aquest treball són els següents:
 # Resources
 
 https://developer.mozilla.org/es/docs/Web/HTML
+
 https://devdocs.io/html/
+
 https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/web-scraping-con-python/
+
 https://realpython.com/beautiful-soup-web-scraper-python/
+
 https://selenium-python.readthedocs.io/locating-elements.html
+
 https://www.geeksforgeeks.org/find_elements_by_xpath-driver-method-selenium-python/
