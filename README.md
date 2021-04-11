@@ -9,9 +9,13 @@ Els autors d'aquest treball són en Miquel Tomé Carreño i en Guillem Fernánde
 # Arxius
 
 Els arxius que formen part d'aquest treball són els següents:
-- **Functions.py**: Arxiu que conté totes les funcions que importarem al fitxer main.py
+- **functions.py**: Arxiu que conté totes les funcions que importarem al fitxer main.py
 - **main.py**: Fitxer principal que ens retorna el fitxer .csv amb totes les dades que volem extreure.
 - **requirements.txt**: Fitxer amb els packages necessaris per poder executar el codi correctament amb le seves respectives versions.
+- **Practica1_WebScraping.pdf**: document amb les respostes a les preguntes proposades pel guió de la pràctica.
+- **downloaded_images.zip**: conjunt d'imatges descarregades en l'execució del fitxer principal.
+- **men_swimwear_dataset.csv**: dataset amb les dades extretes de la pàgina web.
+- **resum_arxiu_robots.txt**: anàlisi del fitxer robots.txt de FiftyOutlet.
 
 # Execució
 
