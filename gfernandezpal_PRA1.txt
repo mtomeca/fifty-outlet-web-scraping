@@ -1,0 +1,4 @@
+- NOM: Guillem Fernández Pallarès
+- ASSIGNATURA: Tipologia i Cicle de Vida de les Dades
+- DATA: 12/04/2021
+- ENLLAÇ DE GITHUB:
